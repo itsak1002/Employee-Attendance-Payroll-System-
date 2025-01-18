@@ -1,0 +1,55 @@
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#70FFFFFF</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color> <!-- Light gray background -->
+
+    <!-- Status Colors -->
+    <color name="present">#d4edda</color>       <!-- Light green for present -->
+    <color name="absent">#f8d7da</color>         <!-- Light red for absent -->
+    <color name="sick_leave">#e2e3e5</color>    <!-- Light gray for sick leave -->
+    <color name="casual_leave">#6E5506</color>   <!-- Light yellow for casual leave -->
+    <color name="paid_leave">#619FE0</color>     <!-- Light blue for paid leave -->
+
+    <!-- Primary Text Color -->
+    <color name="primary_text">#000000</color>   <!-- Black text color -->
+
+    <!-- Accent Color -->
+    <color name="colorAccent">#FF4081</color>    <!-- Pink accent color -->
+
+    <!-- Button Background Colors -->
+    <color name="button_background">#6200EE</color> <!-- Purple button background color -->
+    <color name="button_background_default">#FF4081</color> <!-- Fallback pink button background color -->
+
+    <!-- EditText and Input Field Colors -->
+    <color name="edit_text_background">#E0E0E0</color>   <!-- Light gray background for EditText -->
+    <color name="edit_text_border">#B0B0B0</color>       <!-- Light gray border for input -->
+
+    <!-- Other Colors -->
+    <color name="purple_550">#A14D73FF</color>
+    <color name="purple_750">#B73700B3</color>
+
+    <color name="purple_500">#4D73FF</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#FF0000</color>
+    <color name="primary_color">#6200EE</color> <!-- Example: Purple 500 -->
+    <color name="box_background">#FFFFFF</color> <!-- White background for input -->
+    <color name="box_stroke_color">#BDBDBD</color> <!-- Gray stroke for input box -->
+    <color name="disabled">#A5A5A5</color> <!-- Disabled gray -->
+    <color name="warning_text">#FFA500</color> <!-- You can change this to your desired warning color -->
+    <!-- Primary Dark Color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Dark Blue color -->
+
+    <!-- Primary Color -->
+    <color name="colorPrimary">#3F51B5</color> <!-- Blue color -->
+
+    <!-- Background for Dashboard -->
+    <color name="bg_dashboard">#F5F5F5</color> <!-- Light Grey color suitable for dashboard backgrounds -->
+    <color name="background_start">#EDE7F6</color>
+    <color name="background_end">#F3E5F5</color>
+
+</resources>

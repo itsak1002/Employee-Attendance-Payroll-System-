@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/attendance_status_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/grid_item_background">
+
+    <!-- Calendar Day Text (e.g., 1, 2, 3) -->
+    <TextView
+        android:id="@+id/calendar_day_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <!-- Attendance Status Text (e.g., Absent/Present) -->
+    <TextView
+        android:id="@+id/attendance_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_day_text"
+        android:layout_centerHorizontal="true"
+        android:text="Absent"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/status_background"
+        android:padding="4dp" />
+
+    <!-- Working Time Text -->
+    <TextView
+        android:id="@+id/working_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendance_status_text"
+        android:layout_centerHorizontal="true"
+        android:text="N/A"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

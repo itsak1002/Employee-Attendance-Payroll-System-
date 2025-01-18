@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Activity.Manager.reports.DateWiseReportActivity">
+
+    <TextView
+        android:id="@+id/text_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date"
+        android:textSize="16sp" />
+
+    <android.widget.EditText
+        android:id="@+id/edit_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="date"
+        android:hint="YYYY-MM-DD" />
+
+    <TextView
+        android:id="@+id/text_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <android.widget.EditText
+        android:id="@+id/edit_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="date"
+        android:hint="YYYY-MM-DD" />
+
+    <TextView
+        android:id="@+id/text_employee_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee ID"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <android.widget.EditText
+        android:id="@+id/edit_employee_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Employee ID" />
+
+    <android.widget.Button
+        android:id="@+id/button_generate_report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Generate Report"
+        android:onClick="generateReport" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Employee.GeneratePayslipActivity"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Generate Payslip"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/spinner_month" />
+
+    <!-- Spinner for selecting month -->
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/months_array"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <!-- Spinner for selecting year -->
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/years_array"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_month" />
+
+    <!-- Button to generate payslip PDF -->
+    <Button
+        android:id="@+id/btn_generate_payslip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate Payslip"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_year"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_gravity="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,244 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F5F5F5">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Smart Technology!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_gravity="center"
+            android:paddingBottom="24dp"
+            android:paddingTop="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- GridLayout for Employee Data Cards -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:elevation="4dp">
+
+            <!-- Card for Employee Presence -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:elevation="6dp"
+                android:backgroundTint="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <!-- Custom Half Circle Progress View -->
+                    <FrameLayout
+                        android:layout_width="220dp"
+                        android:layout_height="190dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp">
+
+                        <com.example.empapp.Activity.Manager.HalfCircleProgressBar
+                            android:id="@+id/halfCircleProgressBar"
+                            android:layout_width="190dp"
+                            android:layout_height="190dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp" />
+
+                        <!-- Overlay TextView for Employee Presence and Number -->
+                        <TextView
+                            android:id="@+id/tvEmployeeDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="90%\n10 Employees"
+                            android:textSize="22sp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#2C3E50"
+                            android:textAlignment="center"
+                            android:lineSpacingExtra="10dp"
+                            android:fontFamily="sans-serif-medium" />
+
+                        <Button
+                            android:id="@+id/btnPresentEmployee"
+                            android:layout_width="232dp"
+                            android:layout_height="184dp"
+                            android:layout_gravity="center"
+                            android:padding="8dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="#000000"
+
+                            />
+                    </FrameLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <!-- Additional Cards for Various Functionalities -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <!-- Card for Add Employee -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvAddEmployee"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="Add Employee"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#2C3E50"
+                    android:fontFamily="sans-serif-medium" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for View Attendance -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvLeaveRequest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="Leave Request"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#2C3E50"
+                    android:fontFamily="sans-serif-medium" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Add Bank Details -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvAddBankDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="Add Bank Details"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#2C3E50"
+                    android:fontFamily="sans-serif-medium" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Card for Add Education Details -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#FFFFFF">
+
+                <TextView
+                    android:id="@+id/tvAddEducationDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:text="Add Office Location"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#2C3E50"
+                    android:fontFamily="sans-serif-medium" />
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <!-- Card for All Reports -->
+
+        <!-- Logout Button -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#FFFFFF"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <TextView
+                    android:id="@+id/tvAllReports"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="16dp"
+                    android:text="All Reports"
+                    android:textAlignment="center"
+                    android:textColor="#2C3E50"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#FF5252"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="24dp"
+            android:elevation="4dp"/>
+    </LinearLayout>
+</ScrollView>

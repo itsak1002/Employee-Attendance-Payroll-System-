@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for the current day's attendance -->
+    <TextView
+        android:id="@+id/attendanceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Today's Attendance: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- TextView to display the current date -->
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date Placeholder"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Header layout for the list -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Employee ID"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check-In"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Check-Out"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- ListView to display attendance records -->
+    <ListView
+        android:id="@+id/currentDayAttendanceListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="8dp" />
+
+</LinearLayout>

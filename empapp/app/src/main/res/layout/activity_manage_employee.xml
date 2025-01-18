@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tvManageEmployee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Employees"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold" />
+
+    <!-- Add Employee Button -->
+    <Button
+        android:id="@+id/btnAddEmployee"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_500"
+        android:padding="15dp"
+        android:text="Add Employee"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- Display Employee Button -->
+    <Button
+        android:id="@+id/btnDisplayEmployee"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Display Employees"
+        android:textSize="16sp"
+        android:padding="15dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#FFFFFF" />
+
+    <!-- Update Employee Button -->
+    <Button
+        android:id="@+id/btnUpdateEmployee"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Update Employee"
+        android:textSize="16sp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="#FFFFFF"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/btnDeleteEmployee"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple_500"
+        android:padding="15dp"
+        android:text="Delete Employee"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

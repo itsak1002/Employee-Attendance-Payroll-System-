@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="16dp">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="396dp"
+        android:layout_height="127dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/img"
+        android:alpha="0.8" />
+
+    <!-- Bottom Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottomCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="18dp"
+        android:backgroundTint="@color/white1">
+
+        <!-- Content inside the Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome To SmartTech"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <!-- Manager Login Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnManagerLogin"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:text="Manager Login"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/purple_500" />
+
+            <!-- Employee Login Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEmployeeLogin"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:padding="12dp"
+                android:layout_margin="1dp"
+                android:text="Employee Login"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/purple_700" />
+            <TextView
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:text="If any query, please contact the manager"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

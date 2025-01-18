@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Lottie Animation for Employee Login -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/employeeLoginAnimationView"
+        android:layout_width="283dp"
+        android:layout_height="269dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/emp_login" />
+
+    <!-- Employee Login Title -->
+    <TextView
+        android:id="@+id/tvEmployeeLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employeeLoginAnimationView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Employee Login"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- Employee ID Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/employeeIdInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmployeeLoginTitle"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmployeeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Employee ID"
+            android:inputType="text"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/employeePasswordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employeeIdInputLayout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmployeePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEmployeeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/employeePasswordInputLayout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+
+    <!-- RecyclerView for chat -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loginAnimationView"
+        android:layout_width="wrap_content"
+        android:layout_height="207dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/chatbot" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <!-- Suggestions Section -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_insert_attendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insert Attendance"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="@color/purple_500" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/suggestion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Attendance"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/suggestion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Payslip"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/suggestion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply for Leave"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/suggestion4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How to change password"
+                app:backgroundTint="@color/purple_500"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false" />
+
+            <!-- New Button for Insert Attendance -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Input Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            app:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

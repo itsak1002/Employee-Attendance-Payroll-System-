@@ -1,0 +1,256 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Employee ID -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee ID"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etEmployeeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Employee ID"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Username -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Username"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- First Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter First Name"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Last Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Last Name"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Designation -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designation"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Designation"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Date of Birth -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date of Birth"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333"
+            android:focusable="true" />
+
+        <!-- Date of Joining -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date of Joining"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etDateOfJoining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Date of Joining"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333"
+            android:focusable="true" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#333333" />
+
+        <!-- Button to Add Employee -->
+        <Button
+            android:id="@+id/btnAddEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Employee"
+            android:padding="12dp"
+            android:background="@color/purple_500"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp" />
+    </LinearLayout>
+</ScrollView>

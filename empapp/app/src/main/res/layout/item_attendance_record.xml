@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMarkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark In: 09:00 AM" />
+
+    <TextView
+        android:id="@+id/tvMarkOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Out: 06:00 PM" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Present" />
+
+    <TextView
+        android:id="@+id/tvWorkingHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working Hours: 8 hrs" />
+</LinearLayout>

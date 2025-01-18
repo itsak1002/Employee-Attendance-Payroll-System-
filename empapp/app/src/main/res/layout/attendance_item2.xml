@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Employee ID TextView -->
+    <TextView
+        android:id="@+id/employeeId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Employee ID"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <!-- Check-In Time TextView -->
+    <TextView
+        android:id="@+id/inTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Check-In"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/outTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Check-Out"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center" />
+</LinearLayout>

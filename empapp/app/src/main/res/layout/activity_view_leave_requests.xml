@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.Employee.ViewLeaveRequestsActivity">
+
+    <ListView
+        android:id="@+id/lvLeaveRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/tvNoRequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No leave requests to show."
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lvLeaveRequests"
+        android:layout_marginTop="16dp"
+        android:text="Delete"
+        android:backgroundTint="@color/teal_700"
+        android:visibility="gone" />
+</RelativeLayout>

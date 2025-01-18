@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".manager.reports.paymentreport">
+
+    <EditText
+        android:id="@+id/editTextEmployeeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee ID"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonGeneratePdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate PDF for Employee"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"/>
+
+</LinearLayout>

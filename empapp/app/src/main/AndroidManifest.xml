@@ -1,0 +1,95 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.empapp">
+
+    <!-- Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Background location for geofencing (use responsibly) -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" tools:targetApi="29" />
+
+    <!-- SMS Permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Camera Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <!-- Network Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Storage Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <!-- Notifications Permission (Deprecated after API 29, use Scoped Storage) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app_logo_hdpi"
+        android:roundIcon="@drawable/ic_app_logo_xhdpi"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Empapp"
+        tools:targetApi="31">
+
+        <!-- Add the Google Maps API Key here -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AlzaSyYQ4Dl_NmpEv2KFjndwdbTktFvUCjfI9KR" />
+
+        <!-- MainActivity: App Entry Point -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Authentication and User Management Activities -->
+        <activity android:name=".Activity.Manager.ManagerLogin" android:exported="false" />
+        <activity android:name=".Activity.Manager.OfficeLocationActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.MapActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.add_payment" android:exported="false" />
+        <activity android:name=".Activity.Manager.AddDefaultManagerActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.EmployeeLogin" android:exported="true" />
+        <activity android:name=".Activity.Employee.ProfileActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.hrchatbot" android:exported="false" />
+
+        <!-- Dashboard and Functionalities -->
+        <activity android:name=".Activity.Manager.DashboardActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.EmployeeDashboardActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.OtpverificationActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.CurrentDayAttendanceActivity" android:exported="false" />
+
+        <!-- Employee Management Activities -->
+        <activity android:name=".Activity.Manager.ManageEmployeeActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.AddEmployeeActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false" />
+        <activity android:name=".Activity.Manager.DisplayEmployeesActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.UpdateEmployeeActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.DeleteEmployeeActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.reports.all_reportsActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.reports.DateWiseReportActivity" android:exported="false" />
+
+
+        <!-- Attendance Management Activities -->
+        <activity android:name=".Activity.Employee.MarkAttendanceActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.ChangePasswordePasswordActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.AttendanceHistoryActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.PasswordOtpverificationActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.GeneratePayslipActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.InsertSampleAttendanceActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.EmployeeLeaveActivity" android:exported="false" />
+        <activity android:name=".Activity.Manager.ManageLeaveActivity" android:exported="false" />
+        <activity android:name=".Activity.Employee.ViewLeaveRequestsActivity" android:exported="false"/>
+
+    </application>
+</manifest>

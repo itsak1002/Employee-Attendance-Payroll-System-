@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_office_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Office ID"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Radius (meters)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_get_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Current Location" />
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btn_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display All" />
+    <Button
+        android:id="@+id/btn_open_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Map" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

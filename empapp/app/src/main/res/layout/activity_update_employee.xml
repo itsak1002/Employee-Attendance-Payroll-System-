@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etEmployeeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Employee ID"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnFetchEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Employee Details"
+        android:layout_marginVertical="10dp" />
+
+    <EditText
+        android:id="@+id/etNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Name" />
+
+    <EditText
+        android:id="@+id/etNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Username" />
+
+    <EditText
+        android:id="@+id/etNewDesignation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Designation" />
+
+    <EditText
+        android:id="@+id/etNewAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Address" />
+
+    <Button
+        android:id="@+id/btnUpdateEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Employee"
+        android:layout_marginVertical="10dp" />
+</LinearLayout>

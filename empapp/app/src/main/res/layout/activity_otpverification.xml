@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvOtpInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the OTP sent to your registered phone number"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/tvMaskedPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xxxxxxxx1936"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimary"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP in 1:00"
+        android:textColor="@color/primary_color"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        style="@style/Widget.MaterialComponents.Button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resendOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:backgroundTint="@color/edit_text_border"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        style="@style/Widget.MaterialComponents.Button" />
+
+</LinearLayout>

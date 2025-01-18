@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <!-- Lottie Animation for Manager Login -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loginAnimationView"
+        android:layout_width="283dp"
+        android:layout_height="269dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login_animation" />
+
+    <!-- Manager Login Title -->
+    <TextView
+        android:id="@+id/tvManagerLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginAnimationView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Manager Login"
+        android:textSize="26sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- Username Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvManagerLoginTitle"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etManagerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameInputLayout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etManagerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnManagerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/passwordInputLayout"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false" />
+
+    <!-- Demo Manager Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddManager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnManagerLogin"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Demo Manager"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

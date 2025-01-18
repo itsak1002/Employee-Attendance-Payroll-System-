@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/background_light">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Manager"
+        android:textColor="@color/primary_text"
+        android:textSize="26sp" />
+    <TextView
+        android:layout_width="50mm"
+        android:layout_height="10mm"
+        android:gravity="center"
+        android:text="It is a feather that provides for testing purposes."
+        android:textColor="@color/warning_text"
+        android:textSize="15sp" />
+
+    <!-- Username Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:boxBackgroundColor="@color/box_background"
+        app:boxStrokeColor="@color/box_stroke_color"
+        app:boxStrokeWidth="1dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextManagerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Manager Username"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:textColor="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:boxBackgroundColor="@color/box_background"
+        app:boxStrokeColor="@color/box_stroke_color"
+        app:boxStrokeWidth="1dp"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextManagerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Manager Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@color/primary_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Button to Add Manager -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAddManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Manager"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/box_stroke_color"
+        app:strokeWidth="1dp" />
+
+    <!-- Proceed Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:padding="16dp"
+        app:cornerRadius="8dp"
+        app:strokeColor="@color/box_stroke_color"
+        app:strokeWidth="1dp" />
+
+</LinearLayout>
